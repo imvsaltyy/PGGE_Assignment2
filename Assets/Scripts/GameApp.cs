@@ -10,7 +10,9 @@ public class GameApp : Singleton<GameApp>
 
     void Start()
     {
+        //not pause
         mPause = false;
+        Debug.Log("preload is now moving to menu");
         SceneManager.LoadScene("Menu");
     }
 
