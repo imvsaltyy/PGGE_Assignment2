@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
 namespace PGGE
 {
@@ -17,6 +18,8 @@ namespace PGGE
             public GameObject mConnectionProgress;
             public GameObject mBtnJoinRoom;
             public GameObject mInpPlayerName;
+
+            public GameObject mBtnBack;
 
             bool isConnecting = false;
 
@@ -97,6 +100,12 @@ namespace PGGE
                     Debug.Log("We load the default room for multiplayer");
                     PhotonNetwork.LoadLevel("MultiplayerMap00");
                 }
+            }
+
+            public void OnClickBackToMenu()
+            {
+                //Debug.Log("Loading menu");
+                SceneManager.LoadScene("Menu");
             }
         }
     }
