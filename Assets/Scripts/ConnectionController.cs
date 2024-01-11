@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
 namespace PGGE
 {
@@ -17,6 +18,7 @@ namespace PGGE
             public GameObject mConnectionProgress;
             public GameObject mBtnJoinRoom;
             public GameObject mInpPlayerName;
+            public GameObject mBtnBackMenu;
 
             bool isConnecting = false;
 
@@ -98,6 +100,13 @@ namespace PGGE
                     PhotonNetwork.LoadLevel("MultiplayerMap00");
                 }
             }
+            public void OnClickBackToMenu()
+            {
+                //Debug.Log("Loading menu");
+                SceneManager.LoadScene("Menu");
+            }
+        
         }
     }
+    
 }
