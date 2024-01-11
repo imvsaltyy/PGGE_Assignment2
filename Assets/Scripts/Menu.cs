@@ -5,12 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    private MenuSounds sounds;
-
     // Start is called before the first frame update
     void Start()
     {
-        sounds = GetComponentInParent<MenuSounds>();
         
     }
 
@@ -23,14 +20,12 @@ public class Menu : MonoBehaviour
     public void OnClickSinglePlayer()
     {
         //Debug.Log("Loading singleplayer game");
-        sounds.playClick();
         SceneManager.LoadScene("SinglePlayer");
     }
 
     public void OnClickMultiPlayer()
     {
         //Debug.Log("Loading multiplayer game");
-        sounds.playClick();
         SceneManager.LoadScene("Multiplayer_Launcher");
     }
 
