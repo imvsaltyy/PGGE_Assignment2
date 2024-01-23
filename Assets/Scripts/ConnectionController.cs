@@ -52,7 +52,6 @@ namespace PGGE
                     // If it fails, we'll get notified in 
                     // OnJoinRandomFailed() and we'll create one.
                     PhotonNetwork.JoinRandomRoom();
-                    //PhotonNetwork.JoinRoom("MultiplayerMap00");
                 }
                 else
                 {
