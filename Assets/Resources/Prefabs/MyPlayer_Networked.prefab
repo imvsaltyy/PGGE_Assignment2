@@ -912,6 +912,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 2028064569042939153}
+  - {fileID: 7116436634757010478}
   - {fileID: 2028064569042939152}
   viewIdField: 0
   InstantiationId: 0
@@ -944,7 +945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf1c99d519bd0e94f840b1d8e0ec7002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mAnimator: {fileID: 8230184861667723021}
+  mAnimator: {fileID: 5866666021909216657, guid: 8bb8505e8c95b244ebe62e1fd1c64899, type: 3}
   mPlayerMovement: {fileID: 2028064569042939162}
   mMaxAmunitionBeforeReload: 40
   mAmunitionCount: 100
@@ -2999,7 +3000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1384255833569478622
 RectTransform:
   m_ObjectHideFlags: 0
