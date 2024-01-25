@@ -12,8 +12,8 @@ public class GameApp : Singleton<GameApp>
     {
         //not pause
         mPause = false;
-        Debug.Log("preload is now moving to menu");
-        SceneManager.LoadScene("Menu");
+        Debug.Log("preload is now moving to lobby");
+        SceneManager.LoadScene("Lobby");
     }
 
     // Update is called once per frame

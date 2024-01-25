@@ -40,6 +40,10 @@ namespace PGGE
 
             public void Connect()
             {
+
+                Debug.Log("clicked join room");
+                //play the audio clip from the method for that instance
+                AudioManager.Instance.PlayAudio();
                 mBtnJoinRoom.SetActive(false);
                 mInpPlayerName.SetActive(false);
                 mConnectionProgress.SetActive(true);
@@ -102,10 +106,14 @@ namespace PGGE
                 }
             }
 
-            public void OnClickBackToMenu()
+            public void OnClickBackToLobby()
             {
-                //Debug.Log("Loading menu");
-                SceneManager.LoadScene("Menu");
+                Debug.Log("clicked main menu");
+                //play the back audio clip from the method for that instance
+                AudioManager.Instance.PlayBackAudio();
+                Debug.Log("Loading lobby");
+                SceneManager.LoadScene("Lobby");
+                
             }
         }
     }
